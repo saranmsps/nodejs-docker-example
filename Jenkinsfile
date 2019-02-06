@@ -4,7 +4,9 @@ pipeline {
   stage('Build') {
 steps {
    echo 'Running build automation'
-   sh './gradlew build --no-daemon'
+   steps {
+                sh 'npm --version'
+            }
    
   }
 }
