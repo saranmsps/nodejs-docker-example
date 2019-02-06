@@ -4,10 +4,7 @@ pipeline {
   stage('Build') {
 steps {
    echo 'Running build automation'
-   steps {
                 sh 'npm --version'
-            }
-   
   }
 }
  stage('Build Docker Image') {
